@@ -1,0 +1,312 @@
+body {
+  background-color: black;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main-container {
+  height: 100vh;
+}
+
+#navbar {
+  height: 15vh;
+  position: relative;
+  top: 20px;
+}
+
+#task {
+  color: white;
+  font-size: 45px;
+  position: absolute;
+  top: 15px;
+  left: 100px;
+}
+
+#list {
+  color: dodgerblue;
+  font-weight: 100;
+  font-size: 45px;
+  position: absolute;
+  top: 15px;
+  left: 210px;
+}
+
+#title {
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 25px;
+  text-align: center;
+  font-size: 45px;
+  color: white;
+}
+
+#noitem {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 100px;
+  left: 120px;
+}
+
+#addtask {
+  color: white;
+  font-size: 35px;
+  position: absolute;
+  top: 15px;
+  right: 80px;
+}
+
+.fa-circle-plus {
+  color: white;
+}
+
+.modal {
+  width: 400px;
+  height: 200px;
+  background-color: white;
+  position: absolute;
+  top: 160px;
+  left: 400px;
+  border: none;
+  box-shadow: 5px 5px 10px;
+  border-radius: 10px;
+  display: none;
+  padding-top: 10px;
+}
+
+.add-new-card {
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.addnewitem {
+  text-align: center;
+  margin-left: 118px;
+  font-size: 28px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.modal-input {
+  width: 320px;
+  height: 35px;
+  margin-left: 40px;
+  font-size: 20px;
+  border: 1px solid black;
+}
+
+.modalitem-addbtn {
+  width: 100px;
+  margin: 8px 15px 5px 75px;
+  border: 2px solid dodgerblue;
+  background-color: dodgerblue;
+  border-radius: 15px;
+  font-size: 20px;
+  padding: 6px;
+  color: white;
+}
+
+.modalitem-closebtn {
+  width: 100px;
+  margin-left: 30px;
+  border: 2px solid red;
+  background-color: red;
+  border-radius: 15px;
+  font-size: 20px;
+  padding: 6px;
+  color: white;
+}
+
+#plusbtn {
+  position: absolute;
+  top: 20px;
+  right: 230px;
+  font-size: 30px;
+}
+
+#flex-container {
+  padding: 0px 20px 0px 20px;
+  position: relative;
+  top: 45px;
+  height: 85vh;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.todo_card {
+  width: 240px;
+  height: 330px;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.bigTodoCard {
+  width: 300px;
+  height: 360px;
+}
+
+.centerCard {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.todo_header {
+  width: 100%;
+  height: 5vh;
+  font-size: 25px;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20x;
+  margin-bottom: 20px;
+}
+
+hr {
+  size: 3;
+}
+
+.cardLink {
+  width: 100%;
+  border: 1px solid red;
+  margin-top: 10px;
+  background: none;
+  border: none;
+  font-size: 26px;
+  color: black;
+  font-weight: bold;
+}
+
+.todo_body {
+  width: 100%;
+  height: 40vh;
+  margin-top: 5px;
+}
+
+.todo_btns {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add_todo_list_btn {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(0, 106, 255);
+  border-radius: 50px;
+  font-size: 20px;
+  color: white;
+  border: none;
+  margin-left: 150px;
+}
+
+.fa-trash-can {
+  font-size: 26px;
+  color: red;
+}
+
+#deleteBtnContainer {
+  width: 30px;
+  border: none;
+  color: bisque;
+  background: none;
+  margin-left: 9px;
+}
+
+.listItem {
+  width: 100%;
+  margin: 15px 0px 0px 0px;
+  text-align: center;
+}
+
+.listText {
+  font-size: 22px;
+  color: black;
+  font-weight: 550;
+}
+
+.markDonebtn {
+  padding: 3px 10px 3px 10px;
+  border-radius: 10px;
+  margin-left: 30px;
+  margin: 3px 3px 3px 18px;
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+}
+
+#backbtn {
+  display: none;
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  border-radius: 10px;
+  border: none;
+  background-color: dodgerblue;
+  font-size: 24px;
+  color: white;
+  z-index: 4;
+}
+
+@media (min-width: 500px) and (max-width: 720px) {
+  #task {
+      position: absolute;
+      top: 15px;
+      left: 30px;
+  }
+
+  #list {
+      position: absolute;
+      top: 15px;
+      left: 150px;
+  }
+
+  #noitem {
+      position: absolute;
+      top: 70px;
+      left: 30px;
+  }
+
+  #plusbtn {
+      position: absolute;
+      top: 20px;
+      right: 160px;
+  }
+
+  #addtask {
+      position: absolute;
+      top: 15px;
+      right: 10px;
+  }
+
+  .modal {
+      width: 400px;
+      height: 200px;
+      position: absolute;
+      top: 280px;
+      left: 100px;
+  }
+
+  #flex-container {
+      position: relative;
+      top: 50px;
+      height: 85vh;
+      margin-bottom: 20px;
+      margin-left: 100px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+  }
+}

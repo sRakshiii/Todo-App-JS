@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo-JS</title>
+    <link rel="stylesheet" href="./style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Assistant:wght@200&family=Merriweather+Sans:wght@600&family=Roboto&display=swap"
+        rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Acme&family=Assistant:wght@200&family=Merriweather+Sans:wght@600&family=Roboto&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="main-container">
+        <div id="navbar">
+            <button id="backbtn">&lt;&nbsp;Back</button>
+            <span id="task">Tasks</span>
+            <span id="list">List</span>
+            <div id="title">Title Name</div>
+            <span id="noitem">No items in the todo list</span>
+            <div id="addbtn">
+                <span id="plusbtn"><i class="fa-solid fa-circle-plus"></i></span>
+                <span id="addtask">Add Task</span>
+            </div>
+        </div>
+        <div id="flex-container"></div>
+    </div>
+
+    <div id="item-modal" class="modal">
+        <span class="add-new-card">Add New List</span><br />
+        <hr /><br />
+        <input type="text" placeholder="Add new item" id="card-value" class="modal-input" /><br /><br />
+        <button id="Item-addbtn" class="modalitem-addbtn">Add</button>
+        <button id="Item-closebtn" class="modalitem-closebtn">Close</button>
+    </div>
+
+    <div id="list-modal" class="modal">
+        <span class="addnewitem">Add New Item</span><br />
+        <hr /><br/>
+        <input type="text" placeholder="Add new item" id="listinput" class="modal-input" />
+        <br />
+        <br />
+        <button id="list-addbtn" class="modalitem-addbtn">Add</button>
+        <button id="list-closebtn" class="modalitem-closebtn">Close</button>
+    </div>
+    <script src="./myScript.js"></script>
+</body>
+</html>
